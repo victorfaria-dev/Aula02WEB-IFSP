@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+}
+section#FirstPage {
+  font-family: "Space Grotesk", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+section#SecondPage {
+  display: none;
+}
+
+.box {
+  background-color: rgb(255, 119, 0);
+  margin: 0 auto;
+  width: fit-content;
+  height: fit-content;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+div#Sobreposition {
+    cursor: pointer;
+  background-color: black;
+  margin-top: auto;
+  border-radius: 10px;
+}
+h1#Sobreposition {
+  font-family: "Space Grotesk", sans-serif;
+  color: white;
+  text-align: center;
+}
+div#content {
+  text-align: center;
+}
+div#button {
+  text-align: center;
+}
+img#buttonimage {
+  transform: rotate(-90deg);
+  width: 18px;
+  height: 18px;
+}
+.button a {
+  cursor: pointer;
+  color: white;
+  font: size 28px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ffa12b;
+  display: block;
+  position: relative;
+  padding: 10px 50px;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+
+  -webkit-box-shadow:
+    inset 0 1px 0 #ffe5c4,
+    0 10px 0 #915100;
+  -moz-box-shadow:
+    inset 0 1px 0 #ffe5c4,
+    0 10px 0 #915100;
+  box-shadow:
+    inset 0 1px 0 #ffe5c4,
+    0 10px 0 #915100;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.button a:active {
+  top: 10px;
+  background-color: #f78900;
+
+  -webkit-box-shadow:
+    inset 0 1px 0 #ffe5c4,
+    inset 0 -3px 0 #915100;
+  -moz-box-shadow:
+    inset 0 1px 0 #ffe5c4,
+    inset 0 -3pxpx 0 #915100;
+  box-shadow:
+    inset 0 1px 0 #ffe5c4,
+    inset 0 -3px 0 #915100;
+}
+
+.button:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  padding: 4px;
+  position: absolute;
+  bottom: -15px;
+  left: -4px;
+  z-index: -1;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+button#copyButton {
+  background-color: rgba(255, 255, 255, 0.552);
+  border: none;
+  border-radius: 10%;
+  cursor: pointer;
+}
